@@ -1,5 +1,6 @@
 import React from 'react'
 import Main from '../../components/template/Main/Main'
+import { Link } from 'react-router-dom'
 import './Home.css'
 import Banner from './Banner'
 import { GiHairStrands } from 'react-icons/gi'
@@ -24,7 +25,7 @@ export default props =>
     </section>
     <section className='BotaoDeServico'>
       <h1 className='text3'> Venha conhecer nossos serviços</h1>
-      <button>Agende seu horário!!</button>
+      <button><Link to="/Agenda">Agende seu horário!!</Link></button>
       <Lottie className='animacao' animationData={Girl} />
     </section>
     <section className='pictures'>

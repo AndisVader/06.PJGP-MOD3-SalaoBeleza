@@ -1,4 +1,4 @@
-:root{
+:root {
   --cor1: #048ABF;
   --cor2: #4EB1D9;
   --cor3: #2C3A40;
@@ -76,7 +76,7 @@ footer {
   text-decoration: underline;
 }
 
-.footer-direitos{
+.footer-direitos {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;

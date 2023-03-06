@@ -5,6 +5,7 @@ import HomePage from "../pages/Home/Home";
 import AboutUsPage from "../pages/AboutUs/AboutUs";
 import ServicePage from "../pages/Service/Service";
 import ContactPage from "../pages/Contact/Contact";
+import AgendaPage from "../pages/Agenda/Agenda"
 
 export default props => (
     <Routes>
@@ -12,5 +13,6 @@ export default props => (
       <Route path="SobreNos" element={<AboutUsPage />} />
       <Route path="Servicos" element={<ServicePage />} />
       <Route path="Contatos" element={<ContactPage />} />
+      <Route path="Agenda" element={ <AgendaPage/>} />
     </Routes>
 )

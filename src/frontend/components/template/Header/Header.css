@@ -1,0 +1,21 @@
+:root{
+  --cor1: #048ABF;
+  --cor2: #4EB1D9;
+  --cor3: #2C3A40;
+  --cor4: #6FBFBF;
+  --cor5: #F2E0DF;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  background-color: rgba(14, 13, 13, 0.178);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+img{
+  height: 100px;
+}

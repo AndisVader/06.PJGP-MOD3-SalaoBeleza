@@ -1,0 +1,140 @@
+{
+  "Cabelo": [
+    {
+      "id": 1,
+      "nome": "Botox",
+      "valor": 290,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/cabelo01.jpg",
+      "desc": "O botox capilar é um tipo de tratamento intensivo que proporciona hidratação, brilho e preenchimento aos cabelos, os deixando mais bonitos, sem frizz e pontas duplas."
+    },
+    {
+      "id": 2,
+      "nome": "Coloração",
+      "valor": 189,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/cabelo02.jpg",
+      "desc": "A coloração é um procedimento químico que consiste em depositar pigmento de cor na fibra capilar, alterando, assim, a cor. Você pode colorir os cabelos utilizando dois tipos de produtos: tonalizante ou tinta, também conhecida como coloração permanente."
+    },
+    {
+      "id": 3,
+      "nome": "Escova Curta",
+      "valor": 68,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/cabelo03.jpg",
+      "desc": "A chamada escova progressiva tradicional é aquela que tem alto poder alisante e utiliza a queratina e o óxido acetamide como forma de alisar progressivamente o cabelo."
+    },
+    {
+      "id": 4,
+      "nome": "Escova Média",
+      "valor": 68,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/cabelo04.jpg",
+      "desc": "A chamada escova progressiva tradicional é aquela que tem alto poder alisante e utiliza a queratina e o óxido acetamide como forma de alisar progressivamente o cabelo."
+    },
+    {
+      "id": 5,
+      "nome": "Escova Longa",
+      "valor": 88,
+      "tempo": "45min",
+      "url": "./src/frontend/assets/img/API/cabelo05.jpg",
+      "desc": "A chamada escova progressiva tradicional é aquela que tem alto poder alisante e utiliza a queratina e o óxido acetamide como forma de alisar progressivamente o cabelo."
+    },
+    {
+      "id": 6,
+      "nome": "Manutenção Megahair",
+      "valor": 800,
+      "tempo": "4h",
+      "url": "./src/frontend/assets/img/API/cabelo06.jpg",
+      "desc": "Mega hair é nada mais nada menos que o nome geral dado às técnicas de aplicação de apliques. São várias técnicas, sendo algumas delas:  ponto americano, nó italiano, cola de queratina e entre outras."
+    }
+  ],
+  "Depilacao": [
+    {
+      "id": 1,
+      "nome": "Axilas",
+      "valor": 20,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/depilacao01.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Buço",
+      "valor": 22,
+      "tempo": "15min",
+      "url": "./src/frontend/assets/img/API/depilacao02.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Perna Inteira",
+      "valor": 53,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/depilacao03.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Sobrancelha Henna",
+      "valor": 60,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/depilacao04.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Virilha Cavada",
+      "valor": 42,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/depilacao05.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "Virilha Completa",
+      "valor": 50,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/depilacao06.jpg"
+    }
+  ],
+  "Unhas": [
+    {
+      "id": 1,
+      "nome": "Acrygel Colocação",
+      "valor": 210,
+      "tempo": "2h",
+      "url": "./src/frontend/assets/img/API/unha01.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Acrygel Manutenção",
+      "valor": 130,
+      "tempo": "1h30min",
+      "url": "./src/frontend/assets/img/API/unha02.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Mão",
+      "valor": 26,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/unha03.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Pé",
+      "valor": 29,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/unha04.jpg"
+    },
+    {
+      "id": 5,
+      "nome": "Pé e Mão",
+      "valor": 50,
+      "tempo": "1h",
+      "url": "./src/frontend/assets/img/API/unha05.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "Troca de esmalte",
+      "valor": 20,
+      "tempo": "30min",
+      "url": "./src/frontend/assets/img/API/unha06.jpg"
+    }
+  ]
+}

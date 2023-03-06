@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;1,300&family=Ubuntu:ital,wght@0,500;1,700&display=swap');
+
+
+:root{
+  --cor1: #048ABF;
+  --cor2: #4EB1D9;
+  --cor3: #2C3A40;
+  --cor4: #6FBFBF;
+  --cor5: #F2E0DF;
+  --titulo: Ubuntu;
+  --texto: Barlow;
+
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.navbar a{
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: var(--titulo);
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: top 0.2s;
+  color: black;
+}
+
+.navbar a:hover{
+  text-decoration: dotted;
+  color: var(--cor1);
+}
+
+@media(max-width: 1024px){
+  header{
+    padding: 0 30px;
+  }
+}
+
+@media(max-width: 480px){
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+}

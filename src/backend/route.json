@@ -1,0 +1,6 @@
+{
+  "GET/Cabelo/list": "/Cabelo/",
+  "POST/Cabelo/create": "/Cabelo/",
+  "PUT/Cabelo/update/:id": "/Cabelo/:id",
+  "DELETE/Cabelo/Delete/:id": "/Cabelo/:id"
+}

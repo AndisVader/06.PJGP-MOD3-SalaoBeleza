@@ -1,0 +1,74 @@
+.banner img{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+    color: black;
+}
+
+
+.aboutUs {
+    padding: 150px;
+    background-color: #F2E0DF;
+    display: grid;
+
+
+}
+
+.localizacao, .make, .animacao{
+    width: 450px;
+    height: 450px;
+
+}
+.BotaoDeServico {
+    padding: 150px;
+    background-color: blue;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.BotaoDeServico h1{
+    color: white;
+}
+
+.pictures {
+    background-repeat: no-repeat;
+    background-position: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.avaliacoes {
+    padding: 150PX;
+    background-color: rgb(253, 250, 222);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.local {
+    background-color: rgb(234, 0, 255);
+}
+
+.pictures img {
+    height: 500px;
+    width: 500px;
+}
+.pictures .uma img{
+    height: 1000px;
+    width: 1000px;
+}
+.pictures .uma{
+    margin: 70px;
+    align-items: center;
+}

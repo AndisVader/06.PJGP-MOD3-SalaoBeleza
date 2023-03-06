@@ -1,0 +1,82 @@
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;1,300&family=Ubuntu:ital,wght@0,500;1,700&display=swap');
+
+:root{
+  --cor1: #048ABF;
+  --cor2: #4EB1D9;
+  --cor3: #2C3A40;
+  --cor4: #6FBFBF;
+  --cor5: #F2E0DF;
+  --titulo: Ubuntu;
+  --texto: Barlow;
+
+  --header-height: 100px;
+  --main-height: 100px;
+  --footer-height: 300px;
+
+  --shadow1: 0 2px 23px 0 rgba(0,0,0,0.1);
+  --shadow2: 0 2px 49px 0 rgba(0,0,0,0.06);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 
+    var(--header-height)
+    1fr
+    var(--footer-height);
+  grid-template-areas: 
+    "header header"
+    "content content"
+    "footer footer";
+  min-height: 100vh;
+}
+
+
+header.header{
+  grid-area: header;
+}
+
+main.corpo {
+  grid-area: content;
+}
+
+footer.footer{
+  grid-area: footer;
+}
+
+
+@media(max-width: 768px){
+  .grid-container{
+    grid-template-columns: 0.3fr 1fr; 
+    grid-template-rows:
+      
+      1fr
+      var(--footer-height);
+    grid-template-areas: 
+      "header header"
+      "content content"
+      "footer footer";
+  }
+}
+
+@media(max-width: 480px){
+  .grid-container{
+    grid-template-columns: 1fr; 
+    grid-template-rows:
+      var(--header-height)
+      1fr
+      var(--footer-height);
+    grid-template-areas:
+      "header "
+      "content"
+      "footer";
+  }
+}

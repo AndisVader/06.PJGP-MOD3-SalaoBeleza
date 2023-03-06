@@ -1,0 +1,27 @@
+.cards {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  grid-auto-rows: 300px;
+  grid-auto-flow: dense;
+  justify-content: center;
+  padding: 10px 10px 30px 10px;
+}
+
+.card {
+  background: rgba(233, 232, 230, 0.507);
+  border: 1px solid grey;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.box-img img{
+  width:  300px;
+  height: 200px;
+}
+
+h1{
+  text-align: center;
+  padding-top: 20px;
+}

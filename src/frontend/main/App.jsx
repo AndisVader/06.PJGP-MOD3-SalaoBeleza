@@ -2,6 +2,7 @@ import 'font-awesome/css/font-awesome.min.css'
 import React from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import 'semantic-ui-css/semantic.min.css'
 
 
 import Header from '../components/template/Header/Header'

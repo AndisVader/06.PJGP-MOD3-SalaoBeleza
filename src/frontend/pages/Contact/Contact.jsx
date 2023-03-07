@@ -7,17 +7,31 @@ export default props =>
     <div className="container">
       <section className="info-box">
         <div className="info">
-          <h2>Ligue para nós</h2>
-          <address>Telefone: (11) 1234-5678</address>
-          <h2>Localização</h2>
-          <p>Senac Politecnico</p>
-          <h2>Horário comercial</h2>
-          <address>Ter - Qui ... 10h - 20h</address>
-          <address>Sex - Sab ... 10h - 15h</address>
+          <h2>CENTRAL DE ATENDIMENTO</h2>
+          <details>
+            <br />
+            <summary>TELEFONE:</summary>
+            <p><i>0800 983 5400</i> - <bold>TERRITÓRIO NACIONAL</bold></p>
+            <p><i>(11) 3014-5594</i> - <bold>SP CAPITAL</bold></p>
+            <p><i>(21) 3405-9684</i> - <bold>RJ CAPITAL</bold></p>
+            <p><i>(21) 96473-5594</i> - <bold>CELULAR</bold></p>
+          </details>
+          <br />
+          <h2>LOCALIZAÇÃO</h2>
+          <details>
+            <br />
+            <summary>FOFINHA'S HAIR</summary>
+            <address>R. Vinte e Quatro de Maio, 543 - Riachuelo, Rio de Janeiro - RJ, 20950-090</address>
+          </details>
+          <br />
+          <h2>HORARIO COMERCIAL</h2>
+          <br />
+          <p>Segunda a Sexta - 09:00 as 18:00</p>
+          <p>Sabado & Domingo - 09:00 as 14:00</p>
         </div>
       </section>
       <form className="cont-box">
-        <h1>Contatos</h1>
+        <h1>Fale Conosco</h1>
         <label htmlFor="name">Nome:</label>
         <input type="text" id="name" name="name" required />
 

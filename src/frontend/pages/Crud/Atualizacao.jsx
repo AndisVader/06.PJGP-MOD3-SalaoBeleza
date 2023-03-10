@@ -1,10 +1,11 @@
 import React from 'react'
 import Main from '../../components/template/Main/Main'
-import  Read from '../../components/others/CRUD/ReadUser'
+import './Agendar.css'
+import  Update from '../../components/others/CRUD/UpdateUser'
 
 export default props =>
     <Main>
       <section className="container">
-        <Read/>
+        <Update/>
       </section>
     </Main>

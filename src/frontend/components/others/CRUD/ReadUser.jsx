@@ -1,7 +1,7 @@
-import { Table } from 'semantic-ui-react'
+import { Table, Button } from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
 import axios from "axios";
 import React from "react";
-import './CardStyle.css'
 
 const baseURL = "http://localhost:3001/Usuario";
 
@@ -20,6 +20,17 @@ export default function Read() {
     if (error) return `Error: ${error.message}`;
     if (!post) return "No post!"
 
+    const setCrud = (post) => {
+        let { id, nome, sobrenome, email, telefone, data, hora } = post;
+        localStorage.setItem('ID', id);
+        localStorage.setItem('nome', nome);
+        localStorage.setItem('sobrenome', sobrenome);
+        localStorage.setItem('email', email);
+        localStorage.setItem('telefone', telefone);
+        localStorage.setItem('data', data);
+        localStorage.setItem('hora', hora);
+    }
+
     const arr = post.map((post, index) => {
         return (
             <Table.Body>
@@ -30,6 +41,11 @@ export default function Read() {
                     <Table.Cell>{post.telefone}</Table.Cell>
                     <Table.Cell>{post.data}</Table.Cell>
                     <Table.Cell>{post.hora}</Table.Cell>
+                    <Link to='/Atualizar'>
+                        <Table.Cell>
+                            <Button onClick={() => setCrud(post)}>Update</Button>
+                        </Table.Cell>
+                    </Link>
                 </Table.Row>
             </Table.Body>
         );
@@ -47,6 +63,7 @@ export default function Read() {
                         <Table.HeaderCell>Telefone</Table.HeaderCell>
                         <Table.HeaderCell>Data</Table.HeaderCell>
                         <Table.HeaderCell>Horário</Table.HeaderCell>
+                        <Table.HeaderCell>Update</Table.HeaderCell>
                     </Table.Row>
                 </Table.Header>
                 {arr}

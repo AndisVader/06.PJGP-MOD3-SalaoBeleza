@@ -34,9 +34,9 @@ export default function Read() {
 
     const onDelete = (id) => {
         axios.put(`http://localhost:3001/Usuario/${id}`)
-        .then(() => {
-            setPost();
-        })
+            .then(() => {
+                setPost();
+            })
     }
 
     const arr = post.map((post) => {
@@ -48,15 +48,15 @@ export default function Read() {
                     <Table.Cell>{post.email}</Table.Cell>
                     <Table.Cell>{post.telefone}</Table.Cell>
                     <Table.Cell>{post.data}</Table.Cell>
-                    <Table.Cell>{post.hora}</Table.Cell> 
-                        <Link to='/Atualizar'>
-                            <Table.Cell>
-                                <Button onClick={() => setCrud(post)}>Update</Button>
-                            </Table.Cell>
-                        </Link>
+                    <Table.Cell>{post.hora}</Table.Cell>
+                    <Link to='/Atualizar'>
                         <Table.Cell>
-                            <Button onClick={() => onDelete(post.id)}>Delete</Button>
+                            <Button onClick={() => setCrud(post)}>Update</Button>
                         </Table.Cell>
+                    </Link>
+                    <Table.Cell>
+                        <Button onClick={() => onDelete(post.id)}>Delete</Button>
+                    </Table.Cell>
                 </Table.Row>
             </Table.Body>
         );
@@ -80,6 +80,9 @@ export default function Read() {
                     </Table.Row>
                 </Table.Header>
                 {arr}
+                <Link to="/Agenda">
+                    <Button type='submit'>Agendar Novo Horário</Button>
+                </Link>
             </Table>
 
         </section>

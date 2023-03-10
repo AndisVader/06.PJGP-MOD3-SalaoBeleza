@@ -18,10 +18,9 @@ export default props =>
     <Banner />
     <section className='aboutUs'>
       <div className="vasco">
-        <h1 className='text2'>Seja bem vindo aos Fofinhas Hair. <br />
+        <h1 className='text2'>Seja bem vindo ao salão Fofinha's Hair. <br />
           O Conceito do Fofinha's Hair é te transoformar em ÚNICA. Nossa fórmula secreta é ser fora do comum dos outros salões de beleza, temos a autenticidade e o comprometimento para te fazer sentir especial.
-          Seja criativo, saia da zona de conforto, experimente coisas novas, novos cortes, novas cores.
-          Saia desse padrão nesse mundo repetitivo, se destaque dos demais com sua beleza, seja feliz e sem medo do que vão pensar. </h1>
+          Saia desse padrão nesse mundo repetitivo, se destaque dos demais com sua beleza, seja feliz e sem medo. </h1>
       </div>
       <Lottie className='animacao' animationData={Girl} />
 
@@ -38,8 +37,11 @@ export default props =>
     </section>
     <section className='pictures'>
       <div className="cortes">
+        <div className="flamengo">
         <h1 className="cortesh"> Serviços prestados em nosso salão!</h1>
+        </div>
         <GiHairStrands className='icon' />
+
       </div>
       <div className='images'>
         <img src={menu} />

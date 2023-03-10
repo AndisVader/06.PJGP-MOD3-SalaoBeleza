@@ -2,6 +2,10 @@ import React from "react";
 import 'font-awesome/css/font-awesome.min.css'
 import './Footer.css'
 import logo from '../../../assets/img/logo-semFundo2.png'
+import { BsFacebook } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+
 
 export default props =>
   <footer className="footer">
@@ -10,23 +14,23 @@ export default props =>
         <img src={logo} alt="Logo" />
       </div>
       <div className="footer-conosco">
-        <h4>Nossas Oportunidades</h4>
+        <h4>Oportunidades</h4>
         <p>Trabalhe Conosco</p>
         <p>Seja um Franqueado</p>
       </div>
       <div className="footer-info">
-        <h4>Nossos Contatos</h4>
+        <h4>Contatos</h4>
         <p>Contato</p>
         <p>SAC - Ouvidoria</p>
         <p>Telefone: (11) 1234-5678</p>
         <p>Email: contato@empresa.com</p>
       </div>
       <div className="footer-social">
-        <h4>Fofinhas na Rede</h4>
+        <h4>Rede Fofinha's</h4>
         <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a href="#"><BsFacebook /></a></li>
+          <li><a href="#"><BsTwitter /></a></li>
+          <li><a href="#"><BsInstagram /></a></li>
         </ul>
       </div>
     </div>

@@ -67,7 +67,7 @@ footer {
 }
 
 .footer-social ul li a {
-  font-size: 16px;
+  font-size: 66px;
   text-decoration: none;
   color: #4EB1D9;
 }
@@ -78,7 +78,7 @@ footer {
 
 .footer-direitos {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 10px;
   padding: 20px;
 }

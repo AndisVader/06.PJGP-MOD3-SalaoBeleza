@@ -40,9 +40,6 @@ npm run dev
 
 • Acesse através da url local host informada no terminal.
 
-
-📌 Link do projeto no github Pages:
- 
 ---
 ⌨️ com ❤️ por  Anderson Assum 😊
                 J. Menezes 😊

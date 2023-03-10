@@ -2,6 +2,7 @@ import { Table, Button } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 import axios from "axios";
 import React from "react";
+import './Crud.css'
 
 const baseURL = "http://localhost:3001/Usuario";
 
@@ -47,15 +48,15 @@ export default function Read() {
                     <Table.Cell>{post.email}</Table.Cell>
                     <Table.Cell>{post.telefone}</Table.Cell>
                     <Table.Cell>{post.data}</Table.Cell>
-                    <Table.Cell>{post.hora}</Table.Cell>
-                    <Link to='/Atualizar'>
+                    <Table.Cell>{post.hora}</Table.Cell> 
+                        <Link to='/Atualizar'>
+                            <Table.Cell>
+                                <Button onClick={() => setCrud(post)}>Update</Button>
+                            </Table.Cell>
+                        </Link>
                         <Table.Cell>
-                            <Button onClick={() => setCrud(post)}>Update</Button>
+                            <Button onClick={() => onDelete(post.id)}>Delete</Button>
                         </Table.Cell>
-                    </Link>
-                    <Table.Cell>
-                        <Button onClick={() => onDelete(post.id)}>Delete</Button>
-                    </Table.Cell>
                 </Table.Row>
             </Table.Body>
         );

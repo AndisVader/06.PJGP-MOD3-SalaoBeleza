@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Form } from 'semantic-ui-react'
 import axios from 'axios';
+import { Link } from "react-router-dom";
+import './Crud.css'
 
 export default function updateUser() {
   const [nome, setNome] = useState('');
@@ -32,7 +34,7 @@ export default function updateUser() {
     })
   }
   return (
-    <div>
+    <div className='crud'>
       <Form className="create-form">
         <Form.Field>
           <label>Nome</label>
@@ -58,7 +60,12 @@ export default function updateUser() {
           <label>Horário de Agendamento</label>
           <input placeholder='Horário de Agendamento' value={hora} onChange={(e) => setHora(e.target.value)} />
         </Form.Field>
-        <Button type='submit' onClick={updateAPIData}>Update</Button>
+        <div className='Buttons'>
+          <Button type='submit' onClick={updateAPIData}>Atualizar</Button>
+          <Link to="/Consulta">
+            <Button type='submit'>Consultar</Button>
+          </Link>
+        </div>
       </Form>
     </div>
   );

@@ -21,7 +21,7 @@ export default function PostUser() {
         })
     }
     return (
-        <div>
+        <div className="crud">
             <Form className="create-form">
                 <Form.Field>
                     <label>Nome</label>
@@ -47,8 +47,12 @@ export default function PostUser() {
                     <label>Horário de Agendamento</label>
                     <input placeholder='Horário de Agendamento' onChange={(e) => setHora(e.target.value)} />
                 </Form.Field>
-                <Button onClick={postData} type='submit'>Agendar</Button>
-                <Button type='submit'><Link to="/Consulta">Consultar</Link></Button>
+                <div className="Buttons">
+                    <Button onClick={postData} type='submit'>Agendar</Button>
+                    <Link to="/Consulta">
+                        <Button type='submit'>Consultar</Button>
+                    </Link>
+                </div>
             </Form>
         </div>
     );

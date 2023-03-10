@@ -20,7 +20,6 @@ export default props =>
       </div>
       <div className="footer-info">
         <h4>Contatos</h4>
-        <p>Contato</p>
         <p>SAC - Ouvidoria</p>
         <p>Telefone: (11) 1234-5678</p>
         <p>Email: contato@empresa.com</p>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;1,300&family=Ubuntu:ital,wght@0,500;1,700&display=swap');
+
 .banner img {
     display: flex;
     height: 100%;
@@ -13,7 +15,7 @@
 
 
 .aboutUs {
-    background-image: url('./../../assets/img/menu5.jpg');
+    background: linear-gradient(to bottom, #1e485a, #048ABF, #3281a0b2);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -23,7 +25,7 @@
 }
 
 .vasco {
-    background-color: white;
+    background-color: rgba(57, 146, 206, 0.548);
     width: 50%;
     border-radius: 30px;
     padding: 50px;
@@ -32,6 +34,8 @@
 
 .text2 {
     padding: 40px;
+    font-family: 'Barlow', sans-serif;
+    color: whitesmoke;
 }
 
 .animacao,
@@ -44,7 +48,7 @@
 /*--------------------*/
 
 .BotaoDeServico {
-    background-color: #2C3A40;
+    background: linear-gradient(to bottom, #F2E0DF, #4EB1D9);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,9 +71,13 @@
 .text3 {
     margin: 0 0 15px 0;
 }
-
 .butao {
-    background: none;
+    background: linear-gradient(to bottom,  #ceffff8a, #59c9f5c7);
+    width: 300px;
+    height: 100px;
+    border-radius: 45px;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /*make*/
@@ -78,7 +86,7 @@
 
 .pictures {
     height: 800px;
-    background-image: url('../../assets/img/CabeloFundo3.jpg');
+    background-image: url(https://e0.pxfuel.com/wallpapers/547/841/desktop-wallpaper-premium-vector-seamless-pattern-of-hairdressing-elements-vector-illustration-of-doodle-icons-background-the-concept-of-a-hairdressing-salon-and-a-beauty-salon-saloon-thumbnail.jpg);
 }
 
 .cortes {
@@ -91,12 +99,18 @@
 .icon {
     height: 100px;
     width: 100px;
-    color: #4EB1D9;
+    color: #012d3f;
 }
 
 .cortesh {
-    color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color:  #2C3A40;
+    background-color: white;
+ border-radius: 40PX;
 }
+
 
 .pictures img {
     height: 500px;
@@ -111,19 +125,36 @@
     justify-content: center;
     align-items: center;
 }
+.images img:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.5s;
+    box-shadow: 6px 6px 10px  #048ABF;
+    
+}
 
 
 @media screen and (max-width: 1700px) {
-    .images {
+    .images , .aboutUs, .BotaoDeServico, .pictures {
         display: flex;
         flex-direction: column;
+        height: 2000px;
 
     }
-
-.vasco {
-    max-width: 1700px;
-    max-height: 1000px;
-    color: red
+    .vasco {
+    width: 90%;
+}
+    .third{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+    .text2{
+    max-height: 1250px;
+    max-width: 1250px;
+}
+.butao{
+    width: 500px;
+    height: 150px;
 }
 }
 

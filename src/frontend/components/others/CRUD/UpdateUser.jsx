@@ -36,6 +36,7 @@ export default function updateUser() {
   return (
     <div className='crud'>
       <Form className="create-form">
+      <h1>Faça sua Atualização</h1>
         <Form.Field>
           <label>Nome</label>
           <input placeholder='Nome' value={nome} onChange={(e) => setNome(e.target.value)} />

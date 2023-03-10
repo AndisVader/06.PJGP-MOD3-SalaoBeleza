@@ -9,12 +9,11 @@ O projeto foi uma proposta do curso em desenvolvimento web da Resília Educaçã
 
 ## 📋 Tecnologias utilizadas
 
-🛠️HTML5 de forma semântica, Bootstrap 4, CSS3 e Javascript.
+🛠️React, CSS3 e Javascript.
+
 <div style="display: inline_block"><br>
-<img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
 <img align="center"  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 <img align="center"  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-<img align="center"  height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
 <img align="center"  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg" />
 </div>
 
@@ -41,14 +40,12 @@ npm run dev
 
 • Acesse através da url local host informada no terminal.
 
-
-📌 Link do projeto no github Pages:
- 
 ---
-⌨️ com ❤️ por  Anderson Assum 😊
-                J. Menezes 😊
-                Kaio Melo 😊
-                Pedro Nicácio 😊   
-                Suzana Barbosa 😊
+⌨️ com ❤️ por: <br />
+                Anderson Assum 😊 <br />
+                J. Menezes 😊 <br />
+                Kaio Melo 😊 <br />
+                Pedro Nicácio 😊    <br />
+                Suzana Barbosa 😊 
 
 

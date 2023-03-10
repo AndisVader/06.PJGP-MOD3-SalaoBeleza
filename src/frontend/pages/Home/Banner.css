@@ -18,3 +18,17 @@
   margin-bottom: 2rem;
   color: white;
 }
+
+
+.banner h4 {
+  color: black;
+  background-color: aqua;
+  border-radius: 25%;
+  width: 300px;
+  transition: width 2s, height 4s;
+  font-size: larger;
+}
+
+.banner h4:hover{
+  width: 150px;
+}

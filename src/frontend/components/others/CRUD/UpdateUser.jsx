@@ -3,27 +3,26 @@ import { Button, Form } from 'semantic-ui-react'
 import axios from 'axios';
 
 export default function updateUser() {
-
-  const [id, setID] = useState(null);
   const [nome, setNome] = useState('');
   const [sobrenome, setSobrenome] = useState('');
   const [email, setEmail] = useState('');
   const [telefone, setTelefone] = useState('');
   const [data, setData] = useState('');
   const [hora, setHora] = useState('');
+  const [id, setID] = useState(null);
 
   useEffect(() => {
-    setID(localStorage.getItem('id'))
     setNome(localStorage.getItem('nome'));
     setSobrenome(localStorage.getItem('sobrenome'));
-    setEmail(localStorage.getItem('email'))
+    setEmail(localStorage.getItem('email'));
     setTelefone(localStorage.getItem('telefone'));
     setData(localStorage.getItem('data'));
-    setHora(localStorage.getItem('hora'))
+    setHora(localStorage.getItem('hora'));
+    setID(localStorage.getItem('ID'));
   }, []);
 
   const updateAPIData = () => {
-    axios.post(`http://localhost:3001/Usuario`, {
+    axios.put(`http://localhost:3001/Usuario/${id}`, {
       nome,
       sobrenome,
       email,

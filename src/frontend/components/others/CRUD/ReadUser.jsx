@@ -21,17 +21,24 @@ export default function Read() {
     if (!post) return "No post!"
 
     const setCrud = (post) => {
-        let { id, nome, sobrenome, email, telefone, data, hora } = post;
-        localStorage.setItem('ID', id);
+        let { nome, sobrenome, email, telefone, data, hora, id } = post;
         localStorage.setItem('nome', nome);
         localStorage.setItem('sobrenome', sobrenome);
         localStorage.setItem('email', email);
         localStorage.setItem('telefone', telefone);
         localStorage.setItem('data', data);
         localStorage.setItem('hora', hora);
+        localStorage.setItem('ID', id);
     }
 
-    const arr = post.map((post, index) => {
+    const onDelete = (id) => {
+        axios.put(`http://localhost:3001/Usuario/${id}`)
+        .then(() => {
+            setPost();
+        })
+    }
+
+    const arr = post.map((post) => {
         return (
             <Table.Body>
                 <Table.Row>
@@ -46,6 +53,9 @@ export default function Read() {
                             <Button onClick={() => setCrud(post)}>Update</Button>
                         </Table.Cell>
                     </Link>
+                    <Table.Cell>
+                        <Button onClick={() => onDelete(post.id)}>Delete</Button>
+                    </Table.Cell>
                 </Table.Row>
             </Table.Body>
         );
@@ -60,10 +70,12 @@ export default function Read() {
                         <Table.HeaderCell>Nome</Table.HeaderCell>
                         <Table.HeaderCell>Sobrenome</Table.HeaderCell>
                         <Table.HeaderCell>E-mail</Table.HeaderCell>
-                        <Table.HeaderCell>Telefone</Table.HeaderCell>
+                        <Table.HeaderCell>T
+                            elefone</Table.HeaderCell>
                         <Table.HeaderCell>Data</Table.HeaderCell>
                         <Table.HeaderCell>Horário</Table.HeaderCell>
                         <Table.HeaderCell>Update</Table.HeaderCell>
+                        <Table.HeaderCell>Delete</Table.HeaderCell>
                     </Table.Row>
                 </Table.Header>
                 {arr}

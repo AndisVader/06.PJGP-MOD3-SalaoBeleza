@@ -1,7 +1,7 @@
 import React from "react";
 import 'font-awesome/css/font-awesome.min.css'
 import './Footer.css'
-import logo from '../../../assets/img/logo-semFundo.png'
+import logo from '../../../assets/img/logo-semFundo2.png'
 
 export default props =>
   <footer className="footer">

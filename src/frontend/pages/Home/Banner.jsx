@@ -4,8 +4,9 @@ import './Banner.css'
 const Banner = () => {
   return (
     <div className="banner">
-      <p>Bem Vindo à Fofinha's Hair</p>
-      <h1>Seja diferente! Seja você mesmo.</h1>
+      <h1>Bem Vindo ao Fofinha's Hair</h1>
+      <h4>Seja diferente! <br></br>
+        Seja você mesmo.</h4>
     </div>
   );
 };

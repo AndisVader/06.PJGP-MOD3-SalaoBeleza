@@ -41,10 +41,10 @@ npm run dev
 • Acesse através da url local host informada no terminal.
 
 ---
-⌨️ com ❤️ por  Anderson Assum 😊
-                J. Menezes 😊
-                Kaio Melo 😊
-                Pedro Nicácio 😊   
-                Suzana Barbosa 😊
+⌨️ com ❤️ por  Anderson Assum 😊 <br />
+                J. Menezes 😊 <br />
+                Kaio Melo 😊 <br />
+                Pedro Nicácio 😊    <br />
+                Suzana Barbosa 😊 
 
 

@@ -17,31 +17,44 @@ export default props =>
   <Main>
     <Banner />
     <section className='aboutUs'>
-      <h1 className='text2'>Seja bem vindo aos Fofinhas Hair. <br />
-        Esse salão de beleza é feito para você que quer sair do padrão. Temos as melhores variações e estilos para seu corte de cabelo.
-        Se diferencie, utilize cores vibrantes e se destaque nas multidões</h1>
-      <GiHairStrands className='icon' />
-      {/*aqui eu planejo deixar uma animação*/}
+      <div className="vasco">
+        <h1 className='text2'>Seja bem vindo aos Fofinhas Hair. <br />
+          O Conceito do Fofinha's Hair é te transoformar em ÚNICA. Nossa fórmula secreta é ser fora do comum dos outros salões de beleza, temos a autenticidade e o comprometimento para te fazer sentir especial.
+          Seja criativo, saia da zona de conforto, experimente coisas novas, novos cortes, novas cores.
+          Saia desse padrão nesse mundo repetitivo, se destaque dos demais com sua beleza, seja feliz e sem medo do que vão pensar. </h1>
+      </div>
+      <Lottie className='animacao' animationData={Girl} />
+
     </section>
     <section className='BotaoDeServico'>
-      <h1 className='text3'> Venha conhecer nossos serviços</h1>
-      <button><Link to="/Agenda">Agende seu horário!!</Link></button>
-      <Lottie className='animacao' animationData={Girl} />
+      <div className="third">
+        <h1 className='text3'>Seja criativo, saia da zona de conforto, experimente coisas novas, novos cortes, novas cores.
+          realizamos cortes exclusivos, diversos serviços de estética e embelezamento. Profissionais de alto nível estarão para te atender, conheça os serviços. </h1>
+      </div>
+      <button className='butao'><Link to="/Agenda">Agende seu horário conosco!!</Link></button>
+
+      <Lottie className='make' animationData={Make} />
+
     </section>
     <section className='pictures'>
-      <div className='uma'>
-      <img src={menu} />
+      <div className="cortes">
+        <h1 className="cortesh"> Serviços prestados em nosso salão!</h1>
+        <GiHairStrands className='icon' />
       </div>
-      <div className='outrasduas'>
-      <img src={menu2} />
-      <img src={menu3} />
+      <div className='images'>
+        <img src={menu} />
+        <img src={menu2} />
+        <img src={menu3} />
       </div>
-      {/* serao 3 fotos que será cabelo, spa, tratamentos. preciso lembrar do background maneiro*/}
     </section>
-    <section className='avaliacoes'>
-      Venha nos visitar!
-      <Lottie className='localizacao' animationData={Location} />
-      <Lottie className='make' animationData={Make} />
+    <section className='orientac'>
+    <Lottie className='localizacao' animationData={Location} />
+      <h1>Venha nos visitar!
+      <br />
+      <br />
+      A Fofinha's Hair está localizado no Senac Centro Politécnico Riachuelo, 
+      <br />sala 201. </h1>
+      <br />
     </section>
     <section className='local'>
       <MapPage />

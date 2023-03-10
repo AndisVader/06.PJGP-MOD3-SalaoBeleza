@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <p>Bem Vindo à Fofinha's Hair</p>
-      <h1>Cortes Femininos, depilação, manicure e pedicure</h1>
+      <h1>Seja diferente! Seja você mesmo.</h1>
     </div>
   );
 };

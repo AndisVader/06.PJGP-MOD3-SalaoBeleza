@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Button, Form } from 'semantic-ui-react'
-
+import { Link } from "react-router-dom";
+import Consultar from '../../../pages/Crud/Consultar'
 
 export default function PostUser() {
     const [nome, setNome] = useState('');
@@ -11,7 +12,7 @@ export default function PostUser() {
     const [data, setData] = useState('');
     const [hora, setHora] = useState('');
     const postData = () => {
-        axios.post(`https://64066d3577c1a905a0db30ef.mockapi.io/apifalse`, {
+        axios.post(`http://localhost:3001/Usuario`, {
             nome,
             sobrenome,
             email,
@@ -47,7 +48,8 @@ export default function PostUser() {
                     <label>Horário de Agendamento</label>
                     <input placeholder='Horário de Agendamento' onChange={(e) => setHora(e.target.value)} />
                 </Form.Field>
-                <Button onClick={postData} type='submit'>Realizar Agendamento</Button>
+                <Button onClick={postData} type='submit'>Agendar</Button>
+                <Button type='submit'><Link to="/Consulta">Consultar</Link></Button>
             </Form>
         </div>
     );

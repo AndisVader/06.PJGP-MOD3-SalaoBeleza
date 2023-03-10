@@ -64,7 +64,6 @@ footer.footer{
       "header header"
       "content content"
       "footer footer";
-    min-height: 100vh;
     
   }
 }
@@ -80,6 +79,5 @@ footer.footer{
       "header "
       "content"
       "footer";
-    min-height: 100vh;
   }
 }

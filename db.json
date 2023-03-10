@@ -137,5 +137,24 @@
       "url": "./src/frontend/assets/img/API/unha06.jpg"
     }
   ],
-  "Usuario": []
+  "Usuario": [
+    {
+      "nome": "Kaio",
+      "sobrenome": "Melo ",
+      "email": "kaiomelo",
+      "telefone": "21990998542",
+      "data": "19/12/1998",
+      "hora": "20:00",
+      "id": 1
+    },
+    {
+      "nome": "Kaio",
+      "sobrenome": "Melo ",
+      "email": "kaiomelo",
+      "telefone": "21990998542",
+      "data": "19/12/1998",
+      "hora": "20:00",
+      "id": 2
+    }
+  ]
 }

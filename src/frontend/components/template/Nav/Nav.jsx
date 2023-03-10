@@ -10,7 +10,7 @@ export default props =>
     <nav className='navbar'>
       <ul>
         <Link to="/" className="active">Início</Link>
-        <Link to="/SobreNos">Sobre Nós</Link>
+        <Link to="/Agenda">Agende Conosco</Link>
         <Link to="/Servicos">Serviços</Link>
         <Link to="/Contatos">Contatos</Link>
       </ul>
